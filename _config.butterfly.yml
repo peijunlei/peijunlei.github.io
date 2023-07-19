@@ -13,6 +13,7 @@ menu:
   # Archives: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
+  壁纸: /wallpaper/
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -167,7 +168,7 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
     - img: /img/wechat.jpg
       link:
@@ -394,7 +395,7 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -709,13 +710,26 @@ click_heart:
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
-  enable: false
+  enable: true
   text:
-    # - I
-    # - LOVE
-    # - YOU
+    - 😘
+    - 😂
+    - 😍
+    - 😊
+    - 😁
+    - 😄
+    - 😭
+    - 💖
+    - 💕
+    - 💗
+    - 💘
+    - 💝
+    - 💛
+    - 💚
+    - 💙
+    - 💔
   fontSize: 15px
-  random: false
+  random: true
   mobile: false
 
 # Default display mode (網站默認的顯示模式)
@@ -734,8 +748,8 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: peijunlei
+  code-font-family: peijunlei
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -789,7 +803,7 @@ preloader:
   # 2. pace (progress bar)
   source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: /css/loading.css
+  pace_css_url:
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -920,8 +934,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="/css/font.css">
   bottom:
-    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work

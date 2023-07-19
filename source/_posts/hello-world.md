@@ -1,9 +1,7 @@
 ---
-title: Hello World2
+title: Hello World
 date: 2023.07.28
-tags: ['react','start']
 ---
-测试
 
 ## Quick Start
 
