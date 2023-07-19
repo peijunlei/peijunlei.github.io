@@ -1,0 +1,6 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>@font-face {
+  /*字体名称，名字可以随便起，但是注意要一致，建议英文*/
+  font-family: 'peijunlei';
+  font-display: swap;
+  src: url('./JinNianYeYaoJiaYouYa-2.ttf') format("truetype");
+}
