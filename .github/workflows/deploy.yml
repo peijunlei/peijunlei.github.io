@@ -1,0 +1,25 @@
+name: hexo一键部署静态网页
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Set up Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Deploy to production
+        run: yarn deploy
